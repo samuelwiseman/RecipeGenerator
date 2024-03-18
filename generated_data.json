@@ -1,0 +1,1805 @@
+[
+  {
+    "ingredients": [
+      "chicken"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "beans"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "tomato sauce",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "bread"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "onions",
+      "carrots",
+      "beef"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "avocado",
+      "cherry tomatoes",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "dill",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "bell peppers"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "broccoli"
+    ]
+  },
+  {
+    "ingredients": [
+      "mushrooms",
+      "zucchini",
+      "bell peppers",
+      "onions",
+      "chicken broth"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "vegetables",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "garlic",
+      "butter"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "feta cheese",
+      "olives",
+      "cucumbers"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "avocado",
+      "corn"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "bell peppers",
+      "sesame oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pineapple",
+      "bell peppers",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "milk",
+      "flour",
+      "sugar",
+      "vanilla extract"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "feta cheese",
+      "olives",
+      "cucumbers",
+      "tomatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "avocado",
+      "lime"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "curry powder",
+      "coconut milk",
+      "bell peppers"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "beans",
+      "tomatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "spinach",
+      "garlic",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "asparagus",
+      "lemon",
+      "butter"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "soy sauce",
+      "ginger"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "bell peppers",
+      "corn",
+      "black beans"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "mushrooms",
+      "pasta sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "soy sauce",
+      "sesame oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "lentils",
+      "sweet potatoes",
+      "coconut milk",
+      "curry powder"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "coconut milk",
+      "curry paste",
+      "bell peppers"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "avocado",
+      "cilantro"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "soy sauce",
+      "ginger",
+      "sesame oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "bread",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "onions",
+      "pineapple",
+      "teriyaki sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "dill"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "soy sauce",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "onions",
+      "pineapple"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "avocado"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "apples",
+      "cinnamon",
+      "brown sugar"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "bread",
+      "avocado"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "cream sauce",
+      "parmesan cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "cumin",
+      "garlic powder",
+      "lemon juice"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "onions",
+      "carrots"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "bell peppers",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "garlic",
+      "butter"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "avocado"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "spinach",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "ground beef",
+      "onion",
+      "bell pepper",
+      "taco seasoning"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "sweet potatoes",
+      "black beans",
+      "salsa",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "cucumber",
+      "tomato",
+      "feta cheese",
+      "olives"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "onions",
+      "bell peppers",
+      "sausage"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "carrots",
+      "potatoes",
+      "onions",
+      "beef broth"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "cream sauce",
+      "parmesan cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "vegetables",
+      "soy sauce",
+      "chicken"
+    ]
+  },
+  {
+    "ingredients": [
+      "flour",
+      "sugar",
+      "butter",
+      "eggs",
+      "vanilla extract"
+    ]
+  },
+  {
+    "ingredients": [
+      "ground beef",
+      "onion",
+      "bell pepper",
+      "taco seasoning",
+      "tortillas"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "dill",
+      "garlic",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "bacon",
+      "cheddar cheese",
+      "sour cream",
+      "chives"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "cucumber",
+      "tomato",
+      "red onion",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "spinach",
+      "avocado",
+      "cherry tomatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "bread",
+      "lettuce",
+      "tomato"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "zucchini",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "mushrooms",
+      "onions",
+      "bell peppers",
+      "chili powder",
+      "black beans"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "garlic",
+      "dill"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "feta cheese",
+      "olives"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "tomatoes",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "beans",
+      "onions",
+      "bell peppers"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "carrots",
+      "onions",
+      "beef"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "avocado",
+      "lime",
+      "cilantro"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "bell peppers"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "zucchini",
+      "pineapple"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "broccoli"
+    ]
+  },
+  {
+    "ingredients": [
+      "tomatoes",
+      "onions",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "spinach",
+      "mushrooms"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots",
+      "peas"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "asparagus",
+      "lemon"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "bell peppers",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "carrots",
+      "ginger",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "sesame oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "avocado"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "onion",
+      "bell pepper"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "vegetables"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "avocado",
+      "black beans",
+      "corn"
+    ]
+  },
+  {
+    "ingredients": [
+      "apples",
+      "cinnamon",
+      "sugar",
+      "flour",
+      "butter"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "ginger"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "spinach",
+      "cream sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "carrots",
+      "onion",
+      "beef broth",
+      "rosemary"
+    ]
+  },
+  {
+    "ingredients": [
+      "chicken"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "tomatoes",
+      "basil"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "cheese",
+      "spinach",
+      "mushrooms"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "soy sauce",
+      "vegetables",
+      "tofu"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots",
+      "onions",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "dill",
+      "asparagus"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "avocado",
+      "cilantro"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "apples",
+      "sage",
+      "sweet potatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "zucchini",
+      "pineapple"
+    ]
+  },
+  {
+    "ingredients": [
+      "lentils",
+      "coconut milk",
+      "curry powder",
+      "sweet potatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "avocado"
+    ]
+  },
+  {
+    "ingredients": [
+      "flour",
+      "sugar",
+      "butter",
+      "eggs"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "onions",
+      "garlic",
+      "rosemary",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "dill",
+      "butter"
+    ]
+  },
+  {
+    "ingredients": [
+      "ground beef",
+      "onion",
+      "bell pepper",
+      "tomato",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "pineapple",
+      "coconut milk"
+    ]
+  },
+  {
+    "ingredients": [
+      "chicken",
+      "rice",
+      "broccoli"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "quinoa",
+      "asparagus",
+      "lemon"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "bell peppers",
+      "zucchini",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "tomatoes",
+      "garlic",
+      "basil",
+      "parmesan"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "tomato sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "rosemary",
+      "garlic",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "feta cheese",
+      "phyllo dough"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "onions",
+      "garlic",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "ground beef",
+      "taco seasoning",
+      "lettuce",
+      "cheese",
+      "salsa"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "cucumber",
+      "tomatoes",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "broccoli",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "carrots",
+      "peas",
+      "beef"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "chickpeas",
+      "bell peppers",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "asparagus",
+      "lemon",
+      "dill"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "green onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "mushrooms",
+      "bell peppers",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "tomato",
+      "onion",
+      "garlic"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "bell peppers",
+      "corn"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "cheese",
+      "bell peppers"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "spinach",
+      "tomatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "cumin",
+      "garlic",
+      "lemon"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "pineapple",
+      "teriyaki sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "spinach",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "carrots",
+      "peas"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "ginger",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "bell peppers",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "avocado",
+      "black beans"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "butter",
+      "garlic",
+      "rosemary"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "cream sauce",
+      "parmesan"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "feta cheese",
+      "phyllo dough"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "garlic",
+      "olive oil",
+      "pasta"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "bell peppers",
+      "sesame oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "mushrooms",
+      "zucchini",
+      "bell peppers",
+      "chickpeas"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "curry powder",
+      "coconut milk"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "dill",
+      "asparagus"
+    ]
+  },
+  {
+    "ingredients": [
+      "mushrooms",
+      "garlic",
+      "thyme",
+      "butter"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "cream sauce",
+      "spinach"
+    ]
+  },
+  {
+    "ingredients": [
+      "lentils",
+      "coconut milk",
+      "curry powder",
+      "spinach"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "avocado",
+      "strawberries",
+      "almonds"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "coconut milk",
+      "curry paste",
+      "bell peppers",
+      "pineapple"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "spinach",
+      "cherry tomatoes",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "bacon",
+      "avocado",
+      "bread"
+    ]
+  },
+  {
+    "ingredients": [
+      "mushrooms",
+      "bell peppers",
+      "onions",
+      "chicken broth"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "strawberries",
+      "almonds",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "bell pepper",
+      "onion",
+      "cajun seasoning"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "cream sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "cherry tomatoes",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "cilantro"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots",
+      "celery"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "broccoli",
+      "bell pepper",
+      "zucchini"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "coconut milk",
+      "curry paste",
+      "bell pepper",
+      "pineapple"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "garlic",
+      "rosemary",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "strawberries",
+      "almonds",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "bell pepper",
+      "corn",
+      "black beans"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "bell pepper",
+      "pineapple"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "ginger",
+      "green onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "apples",
+      "cinnamon",
+      "brown sugar"
+    ]
+  },
+  {
+    "ingredients": [
+      "potato",
+      "carrot",
+      "peas"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "bell pepper",
+      "zucchini"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "sesame oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "spinach",
+      "mushroom",
+      "quinoa",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "ginger",
+      "green onion"
+    ]
+  },
+  {
+    "ingredients": [
+      "potato",
+      "carrot",
+      "peas",
+      "corn"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "bell pepper",
+      "zucchini",
+      "mushrooms"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "green onion"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "spinach",
+      "feta cheese",
+      "olives"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "caraway seeds",
+      "apple"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "spinach",
+      "feta cheese",
+      "cherry tomatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "mushrooms",
+      "thyme",
+      "cream",
+      "pork"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell pepper",
+      "pineapple",
+      "soy sauce",
+      "ginger"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "bell pepper",
+      "sesame oil",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potato",
+      "carrot",
+      "peas"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggplant",
+      "bell pepper",
+      "onion",
+      "cumin",
+      "coriander"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "tomatoes",
+      "cucumbers",
+      "red onion"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork chops",
+      "apples",
+      "onion",
+      "cinnamon"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "avocado",
+      "corn",
+      "black beans"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell pepper",
+      "zucchini",
+      "mushrooms"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "soy sauce",
+      "green onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "zucchini",
+      "pasta sauce",
+      "parmesan cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "zucchini",
+      "squash"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "onions",
+      "garlic",
+      "bell peppers"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "carrots",
+      "potatoes",
+      "celery"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "olive oil",
+      "rosemary",
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "tomatoes",
+      "cucumber",
+      "feta cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "carrots",
+      "celery",
+      "potatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "zucchini",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "bell peppers",
+      "onions",
+      "zucchini"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "bacon",
+      "cheddar cheese",
+      "sour cream"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "carrots",
+      "peas",
+      "onion",
+      "beef"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "avocado",
+      "black beans",
+      "corn",
+      "lime"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "broccoli",
+      "soy sauce",
+      "ginger",
+      "sesame oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "olive oil",
+      "garlic",
+      "cherry tomatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "apples",
+      "cinnamon",
+      "sugar",
+      "flour"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "tomatoes",
+      "basil"
+    ]
+  },
+  {
+    "ingredients": [
+      "eggs",
+      "cheese",
+      "spinach",
+      "mushrooms"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "beans",
+      "bell peppers",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots",
+      "celery",
+      "onions"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "avocado",
+      "black beans",
+      "corn",
+      "cilantro"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "apples",
+      "onions",
+      "sage"
+    ]
+  },
+  {
+    "ingredients": [
+      "ground beef",
+      "taco seasoning",
+      "lettuce",
+      "tomato",
+      "cheese",
+      "sour cream"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "spinach",
+      "cherry tomatoes",
+      "feta cheese",
+      "olive oil"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "garlic",
+      "broccoli"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "rosemary",
+      "olive oil",
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "ingredients": [
+      "pasta",
+      "tomato sauce",
+      "cheese"
+    ]
+  },
+  {
+    "ingredients": [
+      "rice",
+      "beans",
+      "bell pepper",
+      "onion"
+    ]
+  },
+  {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "garlic",
+      "butter"
+    ]
+  },
+  {
+    "ingredients": [
+      "ground beef",
+      "taco seasoning",
+      "lettuce",
+      "cheese",
+      "salsa"
+    ]
+  },
+  {
+    "ingredients": [
+      "potatoes",
+      "bacon",
+      "cheddar cheese",
+      "sour cream"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "pasta",
+      "spinach",
+      "tomatoes"
+    ]
+  },
+  {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "green beans"
+    ]
+  },
+  {
+    "ingredients": [
+      "quinoa",
+      "black beans",
+      "corn",
+      "avocado"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "cucumber",
+      "feta cheese",
+      "olives",
+      "red onion"
+    ]
+  },
+  {
+    "ingredients": [
+      "pork",
+      "cabbage",
+      "ginger",
+      "garlic",
+      "soy sauce"
+    ]
+  },
+  {
+    "ingredients": [
+      "shrimp",
+      "avocado",
+      "cilantro",
+      "lime"
+    ]
+  },
+  {
+    "ingredients": [
+      "chickpeas",
+      "spinach",
+      "tomatoes",
+      "cumin"
+    ]
+  }
+]
