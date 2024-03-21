@@ -2,11 +2,11 @@ import pandas as pd
 import json
 
 # Load generated_data.json
-with open("generated_data.json", "r") as f:
+with open("generated_ingredients.json", "r") as f:
     data = json.load(f)
 
 # Load generated_outputs.json
-with open("generated_data_recipes.json", "r") as f:
+with open("generated_recipes.json", "r") as f:
     outputs = json.load(f)
 
 # Create a DataFrame to store the data

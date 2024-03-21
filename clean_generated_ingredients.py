@@ -17,7 +17,7 @@ def remove_duplicate_lines(input_file, output_file):
         f.write("\n".join(lines_to_write))
 
 
-input_file = "generated_data.json"
-output_file = "output.json"
+input_file = "generated_recipes.txt"
+output_file = "generated_ingredients.json"
 remove_duplicate_lines(input_file, output_file)
 print("Duplicate lines removed. Output written to", output_file)
