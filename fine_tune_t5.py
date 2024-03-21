@@ -8,8 +8,8 @@ df = pd.read_parquet(parquet_file_path)
 
 # Load pre-trained T5 model and tokenizer
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-tokenizer = T5Tokenizer.from_pretrained("t5-large")
-model = T5ForConditionalGeneration.from_pretrained("t5-large").to(device)
+tokenizer = T5Tokenizer.from_pretrained("t5-small")
+model = T5ForConditionalGeneration.from_pretrained("t5-small").to(device)
 
 # Prepare data from Parquet file
 input_texts = df["input"].tolist()
@@ -20,6 +20,10 @@ optimizer = AdamW(model.parameters(), lr=1e-5)
 num_epochs = 3  # cycle forwards and backwards through the dataset 3 times
 for epoch in range(num_epochs):
     for input_text, target_text in zip(input_texts, target_texts):
+        # Convert input and target texts to strings
+        input_text = input_text
+        target_text = target_text
+
         input_ids = tokenizer(
             input_text, return_tensors="pt", padding=True, truncation=True
         )["input_ids"].to(device)
@@ -27,10 +31,12 @@ for epoch in range(num_epochs):
             target_text, return_tensors="pt", padding=True, truncation=True
         )["input_ids"].to(device)
 
-        outputs = model(input_ids, labels=target_ids)
+        outputs = model(input_ids=input_ids, labels=target_ids)
         loss = outputs.loss
         loss.backward()
         optimizer.step()
+
+
 
 # Save the fine-tuned model to the new directory
 model.save_pretrained("fine_tuned_model")
