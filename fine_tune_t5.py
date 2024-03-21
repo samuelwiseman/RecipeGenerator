@@ -8,8 +8,8 @@ df = pd.read_parquet(parquet_file_path)
 
 # Load pre-trained T5 model and tokenizer
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-tokenizer = T5Tokenizer.from_pretrained("t5-small")
-model = T5ForConditionalGeneration.from_pretrained("t5-small").to(device)
+tokenizer = T5Tokenizer.from_pretrained("t5-large")
+model = T5ForConditionalGeneration.from_pretrained("t5-large").to(device)
 
 # Prepare data from Parquet file
 input_texts = df["input"].tolist()

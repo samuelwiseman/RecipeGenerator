@@ -40,7 +40,7 @@ def gpt_convert_toy_data():
         print("------------------------------------------")
 
     # Write responses to generated_outputs.json
-    with open("generated_data_recipes.json", "w") as output_file:
+    with open("translated_recipes.json", "w") as output_file:
         json.dump(generated_outputs, output_file, indent=4)
 
     print("Generated outputs have been written to generated_outputs.json")
