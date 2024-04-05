@@ -1,5 +1,6 @@
-from openai import OpenAI
 
+from openai import OpenAI
+import json
 
 def process_data(description, input_data):
     api_key = ""
@@ -10,40 +11,45 @@ def process_data(description, input_data):
             {"role": "user", "content": description},
             {"role": "user", "content": input_data},
         ],
-        model="gpt-3.5-turbo-0125",  # gpt3 turbo
+        model="gpt-4",
         temperature=0.0,
     )
     return chat_completion.choices[0].message.content
 
-
 def gpt_convert_toy_data():
-    # Read lines from generated_ingredients.json
-    with open("generated_ingredients.json", "r") as file:
-        data = file.readlines()
+    # Read the JSON file 'cleaned_ingredients_dataset.json'
+    with open("cleaned_ingredients_dataset.json", "r") as file:
+        data = json.load(file)
 
-    # Process each line and collect responses
-    generated_outputs = []
-    for i, item in enumerate(data, start=1):
-        description = (
-            "This is a string data structure representing a list of ingredients: "
-            f"{item.strip()}. "
-            "You must convert this data into a human readable recipe containing these ingredients, "
-            "combining them with other suitable ones. Can you provide the recipe name, ingredients "
-            "(with their amount required) and step by step instructions required to cook the recipe? "
-            "Do not include any extra descriptions, just the result of your conversion in string format."
-        )
+    # Open the output file
+    with open("recipe_dataset.json", "w") as output_file:
+        # Initialize a counter
+        counter = 0
 
-        response = process_data(description, item.strip())
-        generated_outputs.append(response)
-        print(response)
-        print("------------------------------------------")
+        # Process each item in the JSON array
+        for item in data:
+            ingredients = item.get("ingredients", [])
 
-    # Write responses to generated_recipes.json
-    with open("generated_recipes.txt", "w") as output_file:
-        for output in generated_outputs:
-            output_file.write(output + "\n")
+            description = (
+                "Here are some ingredients: " + ", ".join(ingredients) + ". "
+                "Please provide a recipe name, required amounts of these ingredients, "
+                "and step-by-step cooking instructions. "
+                "Only include these details, nothing extra."
+            )
 
-    print("Processed outputs have been written to generated_recipes.txt")
+            # Ensure the input_data is a JSON string
+            input_data_json = json.dumps({"ingredients": ingredients})
+            response = process_data(description, input_data_json)
 
+            # Increment and print the counter
+            counter += 1
+            print(f"Processed {counter} / {len(data)}")
+
+            # Write the response immediately to the file
+            json.dump(response, output_file)
+            output_file.write("\n")  # New line for each response
+            output_file.flush()  # Flush the buffer to ensure data is written to disk
+
+    print("Conversion completed. Data written to 'recipe_dataset.json'.")
 
 gpt_convert_toy_data()
