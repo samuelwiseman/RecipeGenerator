@@ -1,25 +1,42 @@
-import json
-from transformers import T5ForConditionalGeneration, T5Tokenizer
+import argparse
+from transformers import T5Tokenizer, T5ForConditionalGeneration
+import torch
 
-def main():
-    # Load the fine-tuned model and tokenizer
-    model = T5ForConditionalGeneration.from_pretrained("fine_tuned_model")
-    tokenizer = T5Tokenizer.from_pretrained("fine_tuned_model")
+def get_device():
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    else:
+        return torch.device("cpu")
 
-    # Prompt user for ingredients input
-    ingredients_input = input("Enter the ingredients separated by commas: ")
+device = get_device()
 
-    # Tokenize the input text directly
-    input_ids = tokenizer.encode(ingredients_input, return_tensors="pt", max_length=512, truncation=True)
+model_path = './trained_model'
+print("Loading model and tokenizer...")
+tokenizer = T5Tokenizer.from_pretrained(model_path)
+model = T5ForConditionalGeneration.from_pretrained(model_path).to(device)
+print("Model loaded successfully.")
 
-    # Generate text based on the input
-    output_ids = model.generate(input_ids, max_length=100, num_return_sequences=1, early_stopping=False)
+def generate_recipe(ingredients):
+    print(f"Generating recipe for: {ingredients}")
+    input_text = f"Ingredients: {ingredients}. Generate a recipe."
+    input_ids = tokenizer.encode(input_text, return_tensors="pt").to(device)
+    with torch.no_grad():
+        output_ids = model.generate(
+            input_ids, 
+            max_length=200, 
+            num_beams=5, 
+            no_repeat_ngram_size=2,
+            early_stopping=True,
+            temperature=0.9,
+            do_sample=True  # Enable sampling
+        )[0]
+    output = tokenizer.decode(output_ids, skip_special_tokens=True)
+    return output
 
-    # Decode the generated text
-    generated_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+parser = argparse.ArgumentParser(description='Generate a recipe based on input ingredients.')
+parser.add_argument('ingredients', type=str, help='Ingredients separated by commas')
+args = parser.parse_args()
 
-    # Print the generated text
-    print("Generated text:", generated_text)
-
-if __name__ == "__main__":
-    main()
+recipe = generate_recipe(args.ingredients)
+print("Generated Recipe:")
+print(recipe)

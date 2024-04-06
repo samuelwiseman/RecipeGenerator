@@ -1,43 +1,73 @@
-import pandas as pd
-from transformers import T5Tokenizer, T5ForConditionalGeneration, AdamW
+from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments
+from datasets import load_dataset, Dataset, DatasetDict
+import json
 import torch
 
-# Load the Parquet file
-parquet_file_path = "output.parquet"
-df = pd.read_parquet(parquet_file_path)
+# Check and use GPU if available
+def get_device():
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    else:
+        return torch.device("cpu")
 
-# Load pre-trained T5 model and tokenizer
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-tokenizer = T5Tokenizer.from_pretrained("t5-small")
-model = T5ForConditionalGeneration.from_pretrained("t5-small").to(device)
+device = get_device()
 
-# Prepare data from Parquet file
-input_texts = df["input"].tolist()
-target_texts = df["output"].tolist()
+# Function to load and split the dataset
+def load_dataset_from_json(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
 
-# Fine-tune the model
-optimizer = AdamW(model.parameters(), lr=1e-5)
-num_epochs = 3  # cycle forwards and backwards through the dataset 3 times
-for epoch in range(num_epochs):
-    for input_text, target_text in zip(input_texts, target_texts):
-        # Convert input and target texts to strings
-        input_text = input_text
-        target_text = target_text
+    data = {'input': [item['input'] for item in data], 'output': [item['output'] for item in data]}
+    dataset = Dataset.from_dict(data)
+    dataset = dataset.train_test_split(test_size=0.1)
+    return dataset
 
-        input_ids = tokenizer(
-            input_text, return_tensors="pt", padding=True, truncation=True
-        )["input_ids"].to(device)
-        target_ids = tokenizer(
-            target_text, return_tensors="pt", padding=True, truncation=True
-        )["input_ids"].to(device)
+# Tokenize the data
+def tokenize_data(examples):
+    model_inputs = tokenizer(examples['input'], padding='max_length', truncation=True, max_length=512)
+    with tokenizer.as_target_tokenizer():
+        labels = tokenizer(examples['output'], padding='max_length', truncation=True, max_length=512)
+    model_inputs["labels"] = labels["input_ids"]
+    return model_inputs
 
-        outputs = model(input_ids=input_ids, labels=target_ids)
-        loss = outputs.loss
-        loss.backward()
-        optimizer.step()
+# Load tokenizer and model
+tokenizer = T5Tokenizer.from_pretrained('t5-small')
+model = T5ForConditionalGeneration.from_pretrained('t5-small').to(device)
 
+# Load and tokenize dataset
+file_path = 'model_tuning/formatted_data_for_t5.json'
+dataset = load_dataset_from_json(file_path)
+tokenized_dataset = dataset.map(tokenize_data, batched=True)
 
+# Define training arguments
+training_args = TrainingArguments(
+    output_dir='./results',
+    num_train_epochs=50,
+    per_device_train_batch_size=8,
+    per_device_eval_batch_size=8,
+    warmup_steps=500,
+    weight_decay=0.01,
+    logging_dir='./logs',
+    logging_steps=10,
+    save_strategy="steps",
+    evaluation_strategy="steps",
+    eval_steps=500,
+    load_best_model_at_end=True
+)
 
-# Save the fine-tuned model to the new directory
-model.save_pretrained("fine_tuned_model")
-tokenizer.save_pretrained("fine_tuned_model")
+# Initialize Trainer
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_dataset['train'],
+    eval_dataset=tokenized_dataset['test']
+)
+
+# Train the model
+trainer.train()
+
+# Save the model and tokenizer
+model.save_pretrained('./trained_model')
+tokenizer.save_pretrained('./trained_model')
+
+print("Model training complete and saved to './trained_model'")

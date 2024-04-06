@@ -12,4 +12,4 @@ def trim_json_array(file_path, output_file_path, desired_length):
     with open(output_file_path, 'w') as file:
         json.dump(trimmed_data, file, indent=4)
 
-trim_json_array('cleaned_ingredients_dataset.json', 'model_tuning\shrunk_ingredients_dataset.json', 1033)
+trim_json_array('cleaned_ingredients_dataset.json', 'shrunk_ingredients_dataset.json', 1033)
