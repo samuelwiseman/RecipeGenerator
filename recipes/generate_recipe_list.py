@@ -1,4 +1,3 @@
-
 from openai import OpenAI
 import json
 
@@ -21,13 +20,13 @@ def gpt_convert_toy_data():
     with open("cleaned_ingredients_dataset.json", "r") as file:
         data = json.load(file)
 
-    # Open the output file
-    with open("recipe_dataset.json", "w") as output_file:
-        # Initialize a counter
-        counter = 0
+    # Open the output file in append mode
+    with open("recipe_dataset.json", "a") as output_file:
+        # Start processing from the 590th item
+        start_index = 596
 
-        # Process each item in the JSON array
-        for item in data:
+        # Process each item in the JSON array starting from the 590th item
+        for index, item in enumerate(data[start_index:], start=start_index):
             ingredients = item.get("ingredients", [])
 
             description = (
@@ -41,14 +40,12 @@ def gpt_convert_toy_data():
             input_data_json = json.dumps({"ingredients": ingredients})
             response = process_data(description, input_data_json)
 
-            # Increment and print the counter
-            counter += 1
-            print(f"Processed {counter} / {len(data)}")
-
             # Write the response immediately to the file
             json.dump(response, output_file)
             output_file.write("\n")  # New line for each response
             output_file.flush()  # Flush the buffer to ensure data is written to disk
+
+            print(f"Processed item {index + 1}")
 
     print("Conversion completed. Data written to 'recipe_dataset.json'.")
 
