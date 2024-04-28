@@ -78,16 +78,22 @@ def refine_recipe_with_gpt3(recipe_text, updated_ingredients, openai_api_key):
         ". Please ensure only the necessary amendments are made. Provide your updated recipe with no additional language."
     )
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are an assistant trained to improve cooking recipes by ensuring clarity, coherence, and the use of all listed ingredients."},
-            {"role": "user", "content": prompt_text}
-        ],
-        temperature=0.0
-    )
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are an assistant trained to improve cooking recipes by ensuring clarity, coherence, and the use of all listed ingredients."},
+                {"role": "user", "content": prompt_text}
+            ],
+            temperature=0.0
+        )
+        refined_recipe = response['choices'][0]['message']['content']
+    except Exception as e:
+        print(f"An error occurred with the GPT API call: {e}")
+        print("Returning the recipe generated from T5 without revisions.")
+        refined_recipe = recipe_text
     
-    return response['choices'][0]['message']['content']
+    return refined_recipe
 
 # Main execution block
 device = get_device()
