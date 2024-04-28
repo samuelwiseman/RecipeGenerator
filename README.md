@@ -11,14 +11,31 @@ This tool leverages markov chaining, a pre-trained model (T5), and AI to generat
 
 Ensure Python 3.8 or higher is installed on your machine. You can download it from [python.org](https://www.python.org/downloads/).
 
-### Install Dependencies
+### Activate Virtual Environment and Install Dependencies
 
-Navigate to the directory where you extracted the zip file and install the required dependencies:
+Navigate to the directory where you extracted and follow the steps below:
 
+1. Create a virtual environment using Python's venv module. Run the following command to create a new virtual environment named env:
+```bash
+python -m venv env
+```
+
+2. Activate the virtual environment by running the activation script appropriate for your operating system:
+On Windows:
+```bash
+.\env\Scripts\activate
+```
+On macOS and Linux:
+```bash
+source env/bin/activate
+```
+
+3. Once the virtual environment is activated, install the required dependencies using the requirements.txt file:
 ```bash
 pip install -r requirements.txt
 ```
 
+Once you have successfully completed the above steps, you can proceed to Running the Program.
 
 ## Running the Program
 
