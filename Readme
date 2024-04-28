@@ -1,4 +1,0 @@
-## Recipe Generator
-
-This recipe generator is a fine-tuned version of T5 which is capable of accepting a list of ingredients and transforming that into a recipe
-

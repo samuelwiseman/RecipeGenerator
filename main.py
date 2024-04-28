@@ -6,6 +6,11 @@ from collections import defaultdict
 import random
 import json
 import openai
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+api_key = os.getenv('OPENAI_API_KEY')
 
 class MarkovChain:
     def __init__(self):
@@ -102,8 +107,7 @@ enhanced_ingredients, added_ingredients = enhance_ingredients(user_ingredients, 
 
 recipe = generate_recipe(', '.join(enhanced_ingredients), model, tokenizer, device)
 
-# need to set secret here for api key
-refined_recipe = refine_recipe_with_gpt3(recipe, enhanced_ingredients, 'myapikey') 
+refined_recipe = refine_recipe_with_gpt3(recipe, enhanced_ingredients, api_key) 
 
 if added_ingredients:
     print("")
