@@ -25,4 +25,4 @@ class MarkovChain:
             return None
             # Return None
         return random.choice(possible_ingredients)
-        # Return a random choice from the list of possible next ingredients
+        # Return a random choice from the list of possible compatible ingredients
