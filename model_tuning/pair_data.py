@@ -1,12 +1,13 @@
 import json
 
+
 def format_data(ingredients_file, recipes_file, output_file):
     # Load the ingredients data
-    with open(ingredients_file, 'r') as file:
+    with open(ingredients_file, "r") as file:
         ingredients_data = json.load(file)
 
     # Load the recipe data
-    with open(recipes_file, 'r') as file:
+    with open(recipes_file, "r") as file:
         recipes_data = file.readlines()
         recipes_data = [line.strip() for line in recipes_data]
 
@@ -17,12 +18,21 @@ def format_data(ingredients_file, recipes_file, output_file):
     # Combine the ingredients and recipes into input-output pairs
     formatted_data = []
     for ingredients, recipe in zip(ingredients_data, recipes_data):
-        input_text = "Ingredients: " + ", ".join(ingredients['ingredients']) + ". Generate a recipe."
+        input_text = (
+            "Ingredients: "
+            + ", ".join(ingredients["ingredients"])
+            + ". Generate a recipe."
+        )
         output_text = recipe
         formatted_data.append({"input": input_text, "output": output_text})
 
     # Save the formatted data to a JSON file
-    with open(output_file, 'w') as file:
+    with open(output_file, "w") as file:
         json.dump(formatted_data, file, indent=4)
 
-format_data('ingredients\shrunk_ingredients_dataset.json', 'recipes/recipe_dataset.json', 'model_tuning/formatted_data_for_t5.json')
+
+format_data(
+    "ingredients\shrunk_ingredients_dataset.json",
+    "recipes/recipe_dataset.json",
+    "model_tuning/formatted_data_for_t5.json",
+)

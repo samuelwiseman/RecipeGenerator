@@ -1,6 +1,7 @@
 from openai import OpenAI
 import json
 
+
 def process_data(description, input_data):
     api_key = ""
     client = OpenAI(api_key=api_key)
@@ -14,6 +15,7 @@ def process_data(description, input_data):
         temperature=0.0,
     )
     return chat_completion.choices[0].message.content
+
 
 def gpt_convert_toy_data():
     # Read the JSON file 'cleaned_ingredients_dataset.json'
@@ -48,5 +50,6 @@ def gpt_convert_toy_data():
             print(f"Processed item {index + 1}")
 
     print("Conversion completed. Data written to 'recipe_dataset.json'.")
+
 
 gpt_convert_toy_data()
