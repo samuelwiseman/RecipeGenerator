@@ -2,31 +2,14 @@ import argparse
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 import torch
 import re
-from collections import defaultdict
-import random
 import json
 import openai
 from dotenv import load_dotenv
 import os
+from markov_chain import MarkovChain
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
-
-
-class MarkovChain:
-    def __init__(self):
-        self.transitions = defaultdict(list)
-
-    def train(self, recipes):
-        for recipe in recipes:
-            for i in range(len(recipe) - 1):
-                self.transitions[recipe[i]].append(recipe[i + 1])
-
-    def suggest_next_ingredient(self, ingredient):
-        possible_ingredients = self.transitions.get(ingredient, [])
-        if not possible_ingredients:
-            return None
-        return random.choice(possible_ingredients)
 
 
 def get_device():
@@ -109,36 +92,36 @@ def refine_recipe_with_gpt3(recipe_text, updated_ingredients, openai_api_key):
     return refined_recipe
 
 
-# Main execution block
-device = get_device()
-tokenizer = T5Tokenizer.from_pretrained("./trained_model")
-model = T5ForConditionalGeneration.from_pretrained("./trained_model").to(device)
+if __name__ == "__main__":
+    device = get_device()
+    tokenizer = T5Tokenizer.from_pretrained("./trained_model")
+    model = T5ForConditionalGeneration.from_pretrained("./trained_model").to(device)
 
-recipes = load_recipes_from_file("ingredients/cleaned_ingredients_dataset.json")
-markov_chain = MarkovChain()
-markov_chain.train(recipes)
+    recipes = load_recipes_from_file("ingredients/cleaned_ingredients_dataset.json")
+    markov_chain = MarkovChain()
+    markov_chain.train(recipes)
 
-parser = argparse.ArgumentParser(
-    description="Generate a recipe based on input ingredients."
-)
-parser.add_argument("ingredients", type=str, help="Ingredients separated by commas")
-args = parser.parse_args()
+    parser = argparse.ArgumentParser(
+        description="Generate a recipe based on input ingredients."
+    )
+    parser.add_argument("ingredients", type=str, help="Ingredients separated by commas")
+    args = parser.parse_args()
 
-user_ingredients = args.ingredients.split(",")
-enhanced_ingredients, added_ingredients = enhance_ingredients(
-    user_ingredients, markov_chain
-)
+    user_ingredients = args.ingredients.split(",")
+    enhanced_ingredients, added_ingredients = enhance_ingredients(
+        user_ingredients, markov_chain
+    )
 
-recipe = generate_recipe(", ".join(enhanced_ingredients), model, tokenizer, device)
+    recipe = generate_recipe(", ".join(enhanced_ingredients), model, tokenizer, device)
 
-refined_recipe = refine_recipe_with_gpt3(recipe, enhanced_ingredients, api_key)
+    refined_recipe = refine_recipe_with_gpt3(recipe, enhanced_ingredients, api_key)
 
-if added_ingredients:
+    if added_ingredients:
+        print("")
+        print("Suggested Additional Ingredients:")
+        print(", ".join(added_ingredients))
+        print("")
+
     print("")
-    print("Suggested Additional Ingredients:")
-    print(", ".join(added_ingredients))
-    print("")
-
-print("")
-print("Generated Recipe:")
-print(refined_recipe)
+    print("Generated Recipe:")
+    print(refined_recipe)
