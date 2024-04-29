@@ -17,7 +17,7 @@ Navigate to the directory where you extracted and follow the steps below:
 
 1. Create a virtual environment using Python's venv module. Run the following command to create a new virtual environment named env:
 ```bash
-python -m venv env
+python3 -m venv env
 ```
 
 2. Activate the virtual environment by running the activation script appropriate for your operating system:
