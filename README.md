@@ -1,4 +1,4 @@
-# Recipe Generator
+# Recipe Generator - MealMagnet
 
 This tool leverages markov chaining, a pre-trained model (T5), and AI to generate cooking recipes based on a set of input ingredients.
 
