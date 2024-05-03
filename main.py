@@ -8,10 +8,10 @@ import re
 import json
 from dotenv import load_dotenv
 import os
-from markov_chain import (
+from markov_chain.markov_chain import (
     MarkovChain,
 )
-from recipe_evaluator import (
+from recipe_evaluator.recipe_evaluator import (
     refine_recipe_with_gpt3,
 )
 
